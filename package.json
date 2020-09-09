@@ -1,20 +1,32 @@
 {
-  "name": "aws-operation-dynamodb-import",
-  "version": "1.0.0",
-  "description": "A script that helps import json array to a dynamdb",
+  "name": "@gafa/aws-operation-dynamodb-import",
+  "version": "2.0.0",
+  "description": "An Example to import a big json array to DynamoDb via the AWS SDK of node",
   "main": "do-import.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngaffa/aws-operation-dynamodb-import.git"
+  },
   "keywords": [
-    "aws operation dynamodb import",
+    "aws",
+    "aws operation",
+    "aws dynamodb",
+    "aws sdk import",
     "dynamodb-import",
-    "import to dynamodb",
-    "aws sdk dynamodb",
-    "dynamodb sdk import"
+    "dynamodb-import sdk",
+    "dynamodb sdk",
+    "aws dynamodb sdk",
+    "dynamodb import"
   ],
-  "author": "EL GAFA NAOUFAL",
-  "license": "Apache License 2.0",
+  "author": "EL GAFA Naoufal",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/ngaffa/aws-operation-dynamodb-import/issues"
+  },
+  "homepage": "https://github.com/ngaffa/aws-operation-dynamodb-import#readme",
   "dependencies": {
     "aws-sdk": "^2.749.0"
   }
