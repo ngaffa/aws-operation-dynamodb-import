@@ -1,0 +1,20 @@
+[
+    {
+        "id": "02aSuZ3Si9pgou9K0123",
+        "clientEmail": "Ted.Bour@test.com",
+        "name": "Bour",
+        "firstname": "Ted",
+        "age": 30,
+        "creationDate": 1598256273071,
+        "hour": 1598342400000
+    },
+    {
+        "id": "03aSuZ3Si9pgou9K0123",
+        "clientEmail": "Tara.Bourni@test.com",
+        "name": "Bourni",
+        "firstname": "Tara",
+        "age": 26,
+        "creationDate": 1598256273072,
+        "hour": 1598122400000
+    }
+]
