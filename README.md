@@ -1,6 +1,6 @@
 # aws-operation-dynamodb-import
 
-An Example to import a big json Array To DynamoDb
+An Example to import a big json array to DynamoDb via the AWS SDK of node
 
 # aws-operation-dynamodb-import
 
