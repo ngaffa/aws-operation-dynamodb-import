@@ -1,0 +1,21 @@
+{
+  "name": "aws-operation-dynamodb-import",
+  "version": "1.0.0",
+  "description": "A script that helps import json array to a dynamdb",
+  "main": "do-import.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "aws operation dynamodb import",
+    "dynamodb-import",
+    "import to dynamodb",
+    "aws sdk dynamodb",
+    "dynamodb sdk import"
+  ],
+  "author": "EL GAFA NAOUFAL",
+  "license": "Apache License 2.0",
+  "dependencies": {
+    "aws-sdk": "^2.749.0"
+  }
+}
