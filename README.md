@@ -1,20 +1,16 @@
 # aws-operation-dynamodb-import
 
-An Example to import a big json array to DynamoDb via the AWS SDK of node
-
-# aws-operation-dynamodb-import
-
 aws-operation-dynamodb-import is a Node library that help you import a json array to a table in aws dynamoDB.
 
 ## Required
 
-aws sdk for nodejs :
-you can juste run 
+- aws credentials (when installing aws CLI you should configure your credential by running )
 
 ```bash
-npm install
+aws configure
 ```
-And it will take automatically the required packages :)
+
+- verify tour credential here : (~/.aws/credentials)
 
 ## Installation
 
@@ -26,23 +22,36 @@ npm install aws-operation-dynamoDb-import
 
 ## Usage
 
-To import an array of JSON :
-you should fill this variable in import-data-array.js
+- In your exited node project or init a new project with this commande
+
+```bash
+npm init
+```
+
+- Install the aws-operation-dynamodb aws sdk for nodejs in your project (or the initiated project) :
+
+```bash
+npm install aws-operation-dynamoDb-import
+```
+
+- Create a new js file with this two lines (example impot.js) :
 
 ```javascript
-AWS.config.update({
-  region: 'eu-west-1', // your dynamodb region
-});
-
-const tableName = 'example-table'; // your table name
-const jsonPath = 'to-import.json'; // json to import
+var operation = require('@gafa/aws-operation-dynamodb-import');
+operation.importAllItems('test_dynamo_db', './to-import.json', 'eu-west-1');
 ```
+
+- First argument : the dynamodb name
+- Seconf argument : the path to the json to import
+- Third argument : the aws region of your dynamodb
 
 After that, you should execute this command in your vscode console
 
 ```bash
-node do-import.js
+node impot.js
 ```
+
+And it done ... all your json array file will be imported
 
 Output :
 

@@ -1,6 +1,6 @@
 {
   "name": "@gafa/aws-operation-dynamodb-import",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "An Example to import a big json array to DynamoDb via the AWS SDK of node",
   "main": "do-import.js",
   "scripts": {
