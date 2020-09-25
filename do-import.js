@@ -14,35 +14,42 @@
 var AWS = require('aws-sdk');
 var fs = require('fs');
 
-AWS.config.update({
-  region: 'eu-west-1',
-});
+this.tableName;
+this.jsonPath;
+this.region;
 
-// table must exist
-const tableName = 'exemple-table-dynamoDb';
-const jsonPath = 'to-import.json';
-
-var docClient = new AWS.DynamoDB.DocumentClient();
-
-console.log('Importing items into DynamoDB. Please wait.');
-
-const allItems = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
-allItems.forEach(function (item) {
-  var params = {
-    TableName: tableName,
-    Item: item,
-  };
-
-  docClient.put(params, function (err, data) {
-    if (err) {
-      console.error(
-        'Unable to add item',
-        item.id,
-        '. Error JSON:',
-        JSON.stringify(err, null, 2)
-      );
-    } else {
-      console.log('PutItem succeeded:', item.id);
-    }
+/**
+ *
+ * @param {string} tableName the name of your dynamoDb table (must exist)
+ * @param {string} jsonPath the path to the json array to import
+ * @param {string} region the aws resion
+ */
+this.importAllItems = function (tableName, jsonPath, region) {
+  AWS.config.update({
+    region: region,
   });
-});
+  var docClient = new AWS.DynamoDB.DocumentClient();
+
+  console.log('Importing items into DynamoDB. Please wait.');
+
+  const allItems = JSON.parse(fs.readFileSync(jsonPath, 'utf8'));
+  allItems.forEach(function (item) {
+    var params = {
+      TableName: tableName,
+      Item: item,
+    };
+
+    docClient.put(params, function (err, data) {
+      if (err) {
+        console.error(
+          'Unable to add item',
+          item.id,
+          '. Error JSON:',
+          JSON.stringify(err, null, 2)
+        );
+      } else {
+        console.log('PutItem succeeded:', item.id);
+      }
+    });
+  });
+};
