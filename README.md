@@ -17,7 +17,7 @@ aws configure
 Use the package manager [npm](https://www.npmjs.com/) to install aws-operation-dynamodb.
 
 ```bash
-npm install aws-operation-dynamoDb-import
+npm i @gafa/aws-operation-dynamodb-import
 ```
 
 ## Usage
@@ -31,7 +31,7 @@ npm init
 - Install the aws-operation-dynamodb aws sdk for nodejs in your project (or the initiated project) :
 
 ```bash
-npm install aws-operation-dynamoDb-import
+npm i @gafa/aws-operation-dynamodb-import
 ```
 
 - Create a new js file with this two lines (example import.js) :
