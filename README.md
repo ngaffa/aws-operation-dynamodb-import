@@ -34,7 +34,7 @@ npm init
 npm install aws-operation-dynamoDb-import
 ```
 
-- Create a new js file with this two lines (example impot.js) :
+- Create a new js file with this two lines (example import.js) :
 
 ```javascript
 var operation = require('@gafa/aws-operation-dynamodb-import');
@@ -45,10 +45,10 @@ operation.importAllItems('test_dynamo_db', './to-import.json', 'eu-west-1');
 - Seconf argument : the path to the json to import
 - Third argument : the aws region of your dynamodb
 
-After that, you should execute this command in your vscode console
+After that, you should execute this command in your console
 
 ```bash
-node impot.js
+node import.js
 ```
 
 And it done ... all your json array file will be imported
