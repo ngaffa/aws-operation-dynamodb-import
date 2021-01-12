@@ -10,7 +10,7 @@ aws-operation-dynamodb-import is a Node library that help you import a json arra
 aws configure
 ```
 
-- verify tour credential here : (~/.aws/credentials)
+- check your credential here : (~/.aws/credentials)
 
 ## Installation
 
