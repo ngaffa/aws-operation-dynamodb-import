@@ -4,7 +4,7 @@ aws-operation-dynamodb-import is a Node library that help you import a json arra
 
 ## Required
 
-- aws credentials (when installing aws CLI you should configure your credential by running )
+- aws credentials (when installing aws CLI you should configure your credentials by running )
 
 ```bash
 aws configure
@@ -22,7 +22,7 @@ npm i @gafa/aws-operation-dynamodb-import
 
 ## Usage
 
-- In your exited node project or init a new project with this commande
+- In your current node's project or init a new project with this commande
 
 ```bash
 npm init
@@ -42,10 +42,10 @@ operation.importAllItems('test_dynamo_db', './to-import.json', 'eu-west-1');
 ```
 
 - First argument : the dynamodb name
-- Seconf argument : the path to the json to import
+- Second argument : the path to the json to import
 - Third argument : the aws region of your dynamodb
 
-After that, you should execute this command in your console
+Then run this command in your console
 
 ```bash
 node import.js
@@ -65,7 +65,6 @@ PutItem succeeded: 0h5gxqMsfdzK9H3tKgt2 (id)
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Please make sure to update tests as appropriate.
 
 ## License
 
